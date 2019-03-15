@@ -1,4 +1,4 @@
-#' A brfss brfs_des survey design function
+#' A brfss brfs_srv_des survey design function
 #'
 #' This function allows you to create the brfss survey design and the prevalence table
 #' @param brf_df A brfss raw data object as a dataframe (entered as a character).
@@ -10,10 +10,10 @@
 #' @keywords rbrffs
 #' @export
 #' @examples
-#' brfs_des()
+#' brfs_srv_des()
 
 
-brf_des <- function(brf_df, variable, by_variable = NULL, num_years = 5, years = NULL, 
+brf_srv_des <- function(brf_df, variable, by_variable = NULL, num_years = 5, years = NULL, 
                            finwt_use = FALSE) {
   brf_df_ch <- brf_df
   variable_ch <- variable
